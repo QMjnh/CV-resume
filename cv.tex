@@ -82,14 +82,14 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+%\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+%\addbibresource{citations.bib}
+%\setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -202,6 +202,7 @@ Consolation Prize & \textbf{Fisico Experimental Physics Competition} \hfill(2021
 
 \end{tabularx}
 
+
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
@@ -222,36 +223,44 @@ Consolation Prize & \textbf{Fisico Experimental Physics Competition} \hfill(2021
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
+
 \section{Extracurricular Activities}
 
+
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Volunteer} & \hfill 
-\multicolumn{2}{@{}X@{}} {
-\begin{itemize}
-	\item 16th Red Flamboyant Campaign 
-    \item TED Translator/Transcriber \hfill reached 37k viewers
-    \item Translator at a Vietnamese culture project \hfill reached 14k followers
-\end{itemize}
-}  \\
-\\
-\textbf{TDN Physics+ Club} & \hfill 
+\textbf{Volunteer} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}
+        \item 16th Red Flamboyant Campaign
+        \item TED Translator/Transcriber \hfill reached 37k viewers
+        \item Translator at a Vietnamese culture project \hfill reached 14k followers
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\textbf{TDN Physics+ Club} & \hfill \\
 \multicolumn{2}{@{}X@{}} {
 \begin{itemize}
 	\item Design and create real-life objects using 3D Printing
     \item Crystallography
 \end{itemize}
-}  \\
+}  
 \\
 
 \textbf{The “ganh” band}  \\
-\footnotesize (Co-Founder, Director)
-\\
-\multicolumn{2}{@{}X@{}} {
+\footnotesize (Co-Founder, Director) &\hfill\\
+
+\multicolumn{1}{@{}X@{}} {
 \begin{itemize}
 	\item Responsible for planning, managing, quality control, and participating in creating products
-    \item Cover/Create original music and visual arts 
+    \item Cover, Create original music and visual arts 
 \end{itemize} 
-}\\
+} & \hfill
+
 \end{tabularx}
 
 \end{document}
