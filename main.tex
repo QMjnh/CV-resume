@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large
+    \scshape Minh Le} \\ \vspace{1pt}
+    \small (319) 486-3029 $|$
+    \href{mailto:lequ02@luther.edu}{\underline{lequ02@luther.edu}}     
+   %\href{https://wa.me/qr/V4N2BGJMUHXJI1}{\underline{WhatsApp:} 84 834729920} %$|$
+  %  \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Luther College}{}
+      {Bachelor in Computer Science and Data Science}{GPA: 3.9}
+     % \resumeSubheading
+     %  {Le Hong Phong High School for the Gifted}{HCMC, Viet Nam}
+     %  {Major in Physics}{}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{}
+      {Luther College}{}
+      \resumeItemListStart
+%        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Set up and manage GPU packages (CUDA, cuDNN, etc.) \& libraries for CS/DS department server}
+        \resumeItem{Studied and implemented state-of-the-art (SOTA) techniques such as GANs, CTGAN, Bayesian Networks to develop a comprehensive understanding of Data Augmentation (DA)}
+        \resumeItem{Collaborated with Professor to engineer and implement DA algorithm  10\% better than current SOTA techniques}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+          {\textbf{Shepherd - Livestock AI monitoring} $|$ \emph{YOLOv8, Roboflow, React}}{}
+          \resumeItemListStart
+            \resumeItem{Won 1st place in Midwest region AI Challenge. AI model's accuracy and speed outperformed commercial products}
+            \resumeItem{Developed an AI solution for livestock movement tracking and health monitoring via camera livestream}
+            \resumeItem{Annotated 14,000 labels \& Implemented data augmentation techniques to x4 dataset}
+            \resumeItem{Wrote custom tracking algorithm with accuracy up to 99\%, outperformed YOLOv8 default tracking algorithm}
+            \resumeItem{Engineered distance-calculating algorithm converting 2D spatial information to 3D to monitor livestock health}
+           
+           \resumeItem{Built React web app for farmers to easily interact with the AI}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Luther College Student ID} $|$ \emph{Python, React, FastAPI, OpenCV, pytest}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a mobile application for facilities services such as library and cafeteria for 2000+ users}
+            \resumeItem{Set up SSH connection for local database testing and back-end deployment on Ubuntu server}
+            \resumeItem{Implemented features for automated cafeteria access using QR code detection and Facial Recognition}
+           \resumeItem{Integrated a library checkout feature into the existing system, enhancing user convenience}
+           \resumeItem{Conducted CI/CD to detect and patch potential security vulnerability and error}
+          \resumeItemListEnd
+
+         % \resumeProjectHeading
+         %  {\textbf{Natural Language Processing Chatbot} $|$ \emph{Python, NLTK, TensorFlow}}{November 2023 -- Present}
+         %  \resumeItemListStart
+         %    \resumeItem{Created a chatbot that utilized NLP and ML techniques to provide personalized responses}
+         %    \resumeItem{Integrating sentiment analysis and entity recognition to enhance the chatbot's contextual understanding}
+         %    \resumeItem{Training the model on a large dataset to improve conversational capabilities and user satisfaction}
+         %  \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{COVID-19 Data Visualization} $|$ \emph{Plotly, Matplotlib, Scikit-learn, Statsmodel, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Featured on Columbia University's website for actionable insights for future pandemics}
+            \resumeItem{Applied statistical analyses to identify patterns and insights from a large dataset of 700,000+ entries}
+            \resumeItem{Applied time series forecasting to predict future progression of the pandemic and efficiency of different policies}
+           
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Automated Parking} $|$ \emph{Keras, Reactjs, Nodejs, Onnx, HTML, CSS, OpenCV, Roboflow}}{}
+          \resumeItemListStart
+            \resumeItem{Set up hardware and software frameworks for local training of models}
+            \resumeItem{Built Object Detection and Optical Character Recognition model to extract license plate data with 95\% accuracy.}
+            \resumeItem{Collected and synthesized a 3200+ images dataset; used pre-train   techniques such as mosaic, brightness \& exposure adjustment, grayscaling}
+            \resumeItem{Optimized the time-accuracy tradeoff through heuristic methods and extensive research}
+            \resumeItem{Developed a fully functional user interface application using Reactjs, Onnx, Nodejs, HTML, CSS, and OpenCV}
+          \resumeItemListEnd
+
+           \resumeProjectHeading
+          {\textbf{Flower Classifier} $|$ \emph{Tensorflow, Keras, HuggingFace, Gradio}}{}
+          \resumeItemListStart
+            \resumeItem{Developed models using CNN, VGG16/19, and Fine-grained Classification to classify 102 types of flowers}
+            \resumeItem{Applied Machine Learning/Deep Learning techniques to achieve accuracy of 98\%}
+            \resumeItem{Deployed a user-friendly Gradio interactive web interface for public use on HuggingFace}
+
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks}{: React, Node.js, FastAPI} \\
+ %    \textbf{Developer Tools}{: Git, GitHub, VS Code, Visual Studio} \\
+     \textbf{Libraries}{: pandas, NumPy, pgmpy, SDV, Matplotlib, Tensorflow, Keras, YOLO, pytorch, OpenCV, Scikit-learn, Dash}
+    } \\
+    \textbf{DevTools}{: VSCode, Git, GitHub, Kaggle, Google Colab, CLI/Powershell}\\
+
+    \textbf{Relavant Courses}{: Math \& Coding for AI, Machine Learning for AI, Statistics, Data Analysis \& Visualization, Algorithm \& Data Structures, Applied Machine Learning, Deep Learning}
+    }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
